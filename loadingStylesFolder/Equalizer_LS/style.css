@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  text-align: center;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bar {
+  width: 6px;
+  height: 60px;
+  background: #fff;
+  display: inline-block;
+  transform-origin: bottom center;
+  animation: loading 1.5s ease-in-out infinite;
+}
+
+.bar1 {
+  animation-delay: 0.1s;
+}
+.bar2 {
+  animation-delay: 0.2s;
+}
+.bar3 {
+  animation-delay: 0.3s;
+}
+.bar4 {
+  animation-delay: 0.4s;
+}
+.bar5 {
+  animation-delay: 0.5s;
+}
+.bar6 {
+  animation-delay: 0.7s;
+}
+.bar7 {
+  animation-delay: 0.8s;
+}
+.bar8 {
+  animation-delay: 0.9s;
+}
+
+.image {
+  width: 300px;
+}
+
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  animation: text 2.5s infinite linear;
+}
+
+.dot {
+  animation: dots 2.5s infinite linear;
+}
+
+.dot1 {
+  animation-delay: 0.1s;
+}
+.dot2 {
+  animation-delay: 0.2s;
+}
+.dot3 {
+  animation-delay: 0.3s;
+}
+
+@keyframes loading {
+  0% {
+    transform: scaleY(0.1);
+    background: #fff;
+  }
+  50% {
+    transform: scaleY(1);
+    background: #003366;
+  }
+  100% {
+    transform: scaleY(0.1);
+    background: transparent;
+  }
+}
+
+@keyframes text {
+  0% {
+    font-size: 1.1em;
+  }
+
+  50% {
+    font-size: 1.3em;
+  }
+  100% {
+    font-size: 1.1em;
+  }
+}
+
+@keyframes dots {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
